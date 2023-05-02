@@ -1,8 +1,11 @@
+import Header from "../Composants/Header";
 function Home() {
   return (
     <>
-      <p>Home</p>
+      <div>
+        <Header />
+      </div>
     </>
   );
 }
-export default Home
+export default Home;
