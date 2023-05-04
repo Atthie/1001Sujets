@@ -1,0 +1,44 @@
+.parent{
+    max-width: 100%;
+    
+    .my-form {
+        padding-top: 100px;
+        margin: 0 auto;
+        max-width: 400px;
+        .input-field .prefix{
+            position: relative;
+            float: right;
+            top: 2rem;
+        }
+        .input-field .prefix ~ input{
+           margin-left: 0rem;
+           width: 100%;
+           padding-top: -7px;
+           border-bottom: 0;
+           border: solid 1px gray;
+           margin-top: -55px;
+           
+          
+        }
+        #TextInput-2{
+            border-bottom: 0; 
+            border: solid 1px gray;
+            margin-top: 10px; 
+        }
+        
+        .titre{
+           background-color:#26a69a; 
+            height: 10vh;
+            border-radius: 2px;
+            color: white;
+            text-align: center;
+            h4{
+                padding-top: 3vh;
+            }
+        }
+        .btn{width: 100%;height: 50px;margin-top: 15px;}
+       .p2{margin-top: 25px;}
+    }
+}
+
+  

@@ -1,5 +1,5 @@
 import { Navbar, Icon, NavItem, Dropdown} from "react-materialize";
-
+import Connexion from "../Pages/Connexion";
 function Header() {
   return (
     <>
@@ -28,7 +28,6 @@ function Header() {
         <NavItem href="/about">Sujets</NavItem>
         <NavItem href="/about">À propos</NavItem>
         <NavItem href="/contact">Contact</NavItem>
-
         <Dropdown
           id="profile-dropdown"
           options={{
@@ -45,7 +44,7 @@ function Header() {
             <Icon>account_circle</Icon>
           }
         >
-          <NavItem>Se connecter</NavItem>
+          <NavItem href="/connexion">Se connecter</NavItem>
           <NavItem>S'inscrire</NavItem>
         </Dropdown>
       </Navbar>
