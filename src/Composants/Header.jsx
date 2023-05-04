@@ -1,9 +1,8 @@
 import { Navbar, Icon, NavItem, Dropdown} from "react-materialize";
-import Connexion from "../Pages/Connexion";
 function Header() {
   return (
     <>
-      <Navbar
+      <Navbar style={{ backgroundColor: "#26a69a", padding: '0px 0px 0px 0px' }}
         alignLinks="right"
         brand={
           <a className="brand-logo" href="/">
@@ -45,7 +44,7 @@ function Header() {
           }
         >
           <NavItem href="/connexion">Se connecter</NavItem>
-          <NavItem>S'inscrire</NavItem>
+          <NavItem href="/inscription">S'inscrire</NavItem>
         </Dropdown>
       </Navbar>
     </>
