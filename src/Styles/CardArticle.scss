@@ -1,0 +1,62 @@
+.col{
+    .card-article{
+        background-color: transparent;
+        box-shadow: none;
+        
+
+       .card-image{
+
+       }
+        .card-image::after {
+            content: "Mariage";
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: rgba(1,107,33,255);
+            color: #F5F5DC;
+            width: 100px;
+            height: 40px;
+            text-align: center;
+            line-height: 40px;
+          }
+          .card-stacked{
+            .card-content{
+                padding: 0;
+                padding-left: 15px;
+                
+            }
+            .card-action{
+                padding: 0;  
+                padding-left: 15px;
+            }
+          }
+          
+    }
+      
+}
+@media only screen and (max-width: 1500px) {
+    .col 
+    { display: flex; flex-direction: column; align-items: center;
+        .card-article {
+        
+            max-width: 80%;
+            display: flex;flex-direction: column; align-content: center;
+            .card-image{
+                max-width: 100%;
+            }
+            .card-stacked{
+                .card-content{
+                    padding: 0;
+                    .textContent {
+                        text-align: justify;
+                    }
+                }
+                .card-action{
+                    padding-top: 15px;  
+                    padding-left: 0px;
+                }
+            }
+        }
+    }
+  }
+  

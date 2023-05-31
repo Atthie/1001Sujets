@@ -14,8 +14,6 @@ function CardCategorie(props) {
         <Card
           closeIcon={<Icon>close</Icon>}
           header={<CardTitle image={props.couverture} reveal waves="light" />}
-          reveal={<p>{props.description}</p>}
-          revealIcon={<Icon>visibility</Icon>}
           title={props.titre}
         
         >

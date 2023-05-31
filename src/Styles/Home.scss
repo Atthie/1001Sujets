@@ -15,3 +15,114 @@
         background-image: linear-gradient(to right, rgba(1,107,33,2), rgba(1,107,33,0));
     }
 }
+.categorie{
+
+    .EnteteCategorie{
+        display: flex;flex-direction: column; align-items: center;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        p{color: gray;text-align: justify;}
+    }
+   
+    
+    
+  
+}
+.container-article{
+    background-image: url('../Assets/banniere1.jpg');
+    background-image: linear-gradient(rgba(1,107,33,2), rgba(1,107,33,0));
+    .articles{
+        display: flex;flex-direction: column; align-items: center;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        .EnteteArticles{
+            padding-bottom: 50px;
+            h3{color: #F5F5DC}
+        }
+
+        .desArticle{color:#FFFFFF;text-align: justify;}
+        .voirPlus{
+            background-color: rgba(1,107,33,255);
+            color: #F5F5DC;
+        }
+       
+
+    }
+}
+.container-activite{
+    background-image: url('../Assets/banniere1.jpg');
+    background-image: linear-gradient(to bottom, rgba(1,107,33,2), rgba(1,107,33,0));
+    .activite{
+        display: flex;flex-direction: column; align-items: center;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        .EnteteActivite{
+            padding-bottom: 50px;
+            h3{color: #000000}
+        }
+
+        .desActivite{color:#000000;text-align: justify;}
+        .carousel{
+
+            height: 80vh;
+            padding-top: -50px;
+            margin-top: -100px;
+        }
+        .carousel-item {
+            height: 400px;
+            width: 400px;
+        }
+       
+
+    }
+}
+
+@media only screen and (min-width: 600px) and(max-width: 1500px) {
+    .categorie{
+
+        .blocCategorie{
+            display: flex;
+            flex-wrap: wrap; 
+            .col{
+                flex-basis: 50%;
+               .card{
+                    max-width: 100%;
+               }
+            }
+        }
+        
+      
+    }
+    .container-activite{
+
+        .activite{
+            .carousel{
+             
+                height: 60vh;
+            }
+            .carousel-item {
+                height: 300px;
+                width: 300px;
+            }
+        }
+    }
+           
+}
+@media only screen and (min-width: 300px) and(max-width: 600px) {
+    .container-activite{
+
+        .activite{
+            .carousel{
+             
+                height: 80vh;
+                color: red;
+            }
+            .carousel-item {
+                height: 200px;
+                width: 200px;
+            }
+        }
+    }
+ }
+    
+  
